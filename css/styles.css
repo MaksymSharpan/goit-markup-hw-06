@@ -211,8 +211,8 @@ img {
 	transform: translate(-50%, -50%);
 
 	min-width: 528px;
-	min-height: 681px;
-	padding: 15px;
+	min-height: 581px;
+	padding: 0px;
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -221,8 +221,12 @@ img {
 	cursor: pointer;
 	width: 30px;
 	height: 30px;
-	fill: var(--secondary-text-color);
+	fill: var(--primary-text-color);
 	border-radius: 50%;
+	text-decoration: none;
+	z-index: 5;
+
+	outline: none;
 
 	display: flex;
 	align-items: center;
@@ -241,6 +245,67 @@ img {
 	fill: var(--accent-color);
 }
 
+/* ФОРМА ЗАПОЛНЕНИЯ */
+
+.form {
+	position: relative;
+	width: 448px;
+	outline: 1px solid greenyellow;
+	padding: 40px;
+	box-sizing: content-box;
+}
+
+.form-field {
+	outline: 1px solid tomato;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 28px;
+}
+.form-field.comment {
+	margin-bottom: 20px;
+}
+
+.form-field > label {
+	margin-bottom: 4px;
+	padding: 0;
+}
+.form-field > label::placeholder {
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	color: rgba(117, 117, 117, 0.5);
+}
+.form-field > input {
+	height: 40px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.form-field > textarea {
+	height: 120px;
+	padding: 12px 16px;
+	resize: none;
+}
+
+.js-speaker-form > button {
+	background-color: slateblue;
+
+	/* position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%); */
+}
+.btn-center {
+	display: block;
+	text-align: center;
+}
+.policy {
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #757575;
+	margin-bottom: 30px;
+}
 /* HERO */
 
 .section.hero {
@@ -285,11 +350,10 @@ img {
 	min-width: 200px;
 }
 
-.button-hero:hover {
+/* .button-hero:hover {
 	transform: rotate(900deg);
 	transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-/* rotate(360deg); */
+} */
 
 /* ОСОБЕННОСТИ */
 
