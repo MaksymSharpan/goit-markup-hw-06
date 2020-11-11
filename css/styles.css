@@ -673,6 +673,8 @@ b {
 	border-radius: 4px;
 }
 .button-footer {
+	position: relative;
+
 	cursor: pointer;
 	color: #ffffff;
 	background-color: #2196f3;
@@ -688,7 +690,9 @@ b {
 
 	padding: 11px 34px;
 }
-
+.icon-footer {
+	position: absolute;
+}
 /* MODALKA */
 
 .backdrop {
@@ -777,11 +781,14 @@ b {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--primary-text-color);
+
+	margin-bottom: 30px;
 }
 
 .form-field > label {
-	margin-bottom: 4px;
-	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
 
 	font-weight: 400;
 	font-size: 12px;
@@ -797,6 +804,7 @@ b {
 }
 .form-field > input {
 	height: 40px;
+	padding: 12px 42px;
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -829,14 +837,16 @@ b {
 	margin-bottom: 30px;
 	text-align: center;
 }
-.form-input {
+.form-field {
 	position: relative;
 }
 
 .icon-form {
 	position: absolute;
-	bottom: 14px;
+	top: 50%;
 	left: 14px;
+	transform: translateY(-50%);
+	margin: 0;
 }
 .form-input:focus + .icon-form {
 	fill: var(--accent-color);
