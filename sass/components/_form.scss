@@ -81,6 +81,11 @@
 	transform: translateY(-50%);
 	margin: 0;
 }
+.form-input:hover + .icon-form,
 .form-input:focus + .icon-form {
 	fill: $accent-color;
+}
+.form-input:hover,
+.form-input:focus {
+	outline-color: $accent-color;
 }
