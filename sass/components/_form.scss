@@ -81,11 +81,26 @@
 	transform: translateY(-50%);
 	margin: 0;
 }
-.form-input:hover + .icon-form,
+
 .form-input:focus + .icon-form {
 	fill: $accent-color;
 }
-.form-input:hover,
+// .form-input:hover,
+// .form-input:focus {
+// 	outline-color: $accent-color;
+// }
+
+.form-input:focus-within .icon-form,
 .form-input:focus {
-	outline-color: $accent-color;
+	fill: $accent-color;
+	border-color: $accent-color;
+	outline: none;
 }
+// .form-input:hover {
+// 	border-color: $accent-color;
+// }
+// .form-input:hover .icon-form,
+// .form-input:hover {
+// 	fill: $accent-color;
+// 	border-color: $accent-color;
+// }

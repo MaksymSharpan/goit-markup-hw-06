@@ -438,7 +438,8 @@ b {
 
 .mail-footer:hover,
 .mail-footer:focus {
-  outline-color: #2196f3;
+  outline-color: none;
+  border-color: #2196f3;
 }
 
 .features-head {

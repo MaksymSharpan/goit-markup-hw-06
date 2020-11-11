@@ -317,7 +317,8 @@ b {
 
 .mail-footer:hover,
 .mail-footer:focus {
-  outline-color: #2196f3;
+  outline-color: none;
+  border-color: #2196f3;
 }
 
 .section.hero {
@@ -701,13 +702,14 @@ b {
   margin: 0;
 }
 
-.form-input:hover + .icon-form,
 .form-input:focus + .icon-form {
   fill: #2196f3;
 }
 
-.form-input:hover,
+.form-input:focus-within .icon-form,
 .form-input:focus {
-  outline-color: #2196f3;
+  fill: #2196f3;
+  border-color: #2196f3;
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */

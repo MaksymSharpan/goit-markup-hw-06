@@ -117,5 +117,6 @@ b {
 
 .mail-footer:hover,
 .mail-footer:focus {
-	outline-color: $accent-color;
+	outline-color: none;
+	border-color: $accent-color;
 }
